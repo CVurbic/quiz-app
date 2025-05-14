@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple, interactive quiz application built with React and Tailwind CSS. Users can take quizzes, view their scores, and challenge themselves with multiple-choice questions.
+
+## Table of Contents
+
+- [Features](#features)
+- [Demo](#demo)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Multiple-choice quiz functionality
+- Dynamic question loading
+- Score tracking and result display
+- Responsive design for desktop and mobile
+
+## Demo
+
+A live demo of the application is available at: [https://your-demo-link.com](https://your-demo-link.com)
+
+## Tech Stack
+
+- **React**: A JavaScript library for building user interfaces. ([react.dev](https://react.dev/?utm_source=chatgpt.com))
+- **Create React App**: Bootstrapped the project with minimal configuration. ([create-react-app.dev](https://create-react-app.dev/docs/getting-started/?utm_source=chatgpt.com))
+- **Tailwind CSS**: Utility-first CSS framework for custom designs. ([tailwindcss.com](https://tailwindcss.com/?utm_source=chatgpt.com))
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/CVurbic/quiz-app.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd quiz-app
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm start
+   ```
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- `npm start` - Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `npm run build` - Builds the app for production to the `build` folder.
+- `npm run eject` - Removes the single build dependency from your project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+quiz-app/
+├── public/           # Static assets
+├── src/              # Application source code
+│   ├── components/   # Reusable React components
+│   ├── pages/        # Main pages
+│   ├── data/         # Quiz questions and data
+│   ├── App.js        # Root component
+│   ├── index.js      # Entry point
+│   └── styles/       # Global and Tailwind CSS config
+├── package.json      # Project metadata and dependencies
+├── tailwind.config.js# Tailwind CSS configuration
+└── README.md         # Project documentation
+```
