@@ -60,11 +60,10 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {/* Infinity Mode Card */}
           <div
-            className={`rounded-xl p-6 border-2 cursor-pointer transition-all duration-300 transform hover:scale-105 ${
-              selectedMode === "infinity"
-                ? "border-amber-400 bg-slate-800/80"
-                : "border-slate-700 bg-slate-800/40 hover:border-slate-500"
-            }`}
+            className={`rounded-xl p-6 border-2 cursor-pointer transition-all duration-300 transform hover:scale-105 ${selectedMode === "infinity"
+              ? "border-amber-400 bg-slate-800/80"
+              : "border-slate-700 bg-slate-800/40 hover:border-slate-500"
+              }`}
             onClick={() => {
               setSelectedMode("infinity");
               if (selectedCategory) {
@@ -89,11 +88,10 @@ export default function Home() {
 
           {/* Classic Mode Card */}
           <div
-            className={`rounded-xl p-6 border-2 cursor-pointer transition-all duration-300 transform hover:scale-105 ${
-              selectedMode === "classic"
-                ? "border-amber-400 bg-slate-800/80"
-                : "border-slate-700 bg-slate-800/40 hover:border-slate-500"
-            }`}
+            className={`rounded-xl p-6 border-2 cursor-pointer transition-all duration-300 transform hover:scale-105 ${selectedMode === "classic"
+              ? "border-amber-400 bg-slate-800/80"
+              : "border-slate-700 bg-slate-800/40 hover:border-slate-500"
+              }`}
             onClick={() => {
               setSelectedMode("classic");
               if (selectedCategory) {
@@ -136,12 +134,15 @@ export default function Home() {
               categories.map((cat) => (
                 <button
                   key={cat.id}
-                  onClick={() => setSelectedCategory(cat)}
-                  className={`${getCategoryColor(cat.id)} ${
-                    selectedCategory?.id === cat.id
-                      ? "ring-4 ring-amber-400"
-                      : ""
-                  } text-white px-6 py-4 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex flex-col items-center justify-center min-h-[100px]`}
+                  onClick={() => {
+                    setSelectedMode("infinity");
+                    setSelectedCategory(cat);
+                    navigate(`/quiz/infinity/${cat.id}`);
+                  }}
+                  className={`${getCategoryColor(cat.id)} ${selectedCategory?.id === cat.id
+                    ? "ring-4 ring-amber-400"
+                    : ""
+                    } text-white px-6 py-4 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex flex-col items-center justify-center min-h-[100px]`}
                 >
                   <span className="font-bold text-lg text-center">
                     {cat.name}

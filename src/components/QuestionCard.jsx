@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import { CheckCircle, XCircle, HelpCircle } from "lucide-react";
 
@@ -131,11 +129,10 @@ export default function QuestionCard({
       {/* Feedback area */}
       {selected && (
         <div
-          className={`p-4 text-center font-medium ${
-            answerState
+          className={`p-4 text-center font-medium ${answerState
               ? "bg-emerald-900/30 text-emerald-300"
               : "bg-rose-900/30 text-rose-300"
-          }`}
+            }`}
         >
           {answerState
             ? "Correct! Loading next question..."
